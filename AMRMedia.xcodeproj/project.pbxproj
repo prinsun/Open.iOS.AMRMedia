@@ -1,0 +1,472 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		20D5CA2B1A1EFB3700245213 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20D5CA2A1A1EFB3700245213 /* Foundation.framework */; };
+		20D5CA2D1A1EFB3700245213 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20D5CA2C1A1EFB3700245213 /* CoreGraphics.framework */; };
+		20D5CA2F1A1EFB3700245213 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20D5CA2E1A1EFB3700245213 /* UIKit.framework */; };
+		20D5CA351A1EFB3700245213 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 20D5CA331A1EFB3700245213 /* InfoPlist.strings */; };
+		20D5CA371A1EFB3700245213 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 20D5CA361A1EFB3700245213 /* main.m */; };
+		20D5CA3B1A1EFB3700245213 /* PRNAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 20D5CA3A1A1EFB3700245213 /* PRNAppDelegate.m */; };
+		20D5CA3E1A1EFB3700245213 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20D5CA3C1A1EFB3700245213 /* Main.storyboard */; };
+		20D5CA411A1EFB3700245213 /* PRNViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20D5CA401A1EFB3700245213 /* PRNViewController.m */; };
+		20D5CA431A1EFB3700245213 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 20D5CA421A1EFB3700245213 /* Images.xcassets */; };
+		20D5CA4A1A1EFB3700245213 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20D5CA491A1EFB3700245213 /* XCTest.framework */; };
+		20D5CA4B1A1EFB3700245213 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20D5CA2A1A1EFB3700245213 /* Foundation.framework */; };
+		20D5CA4C1A1EFB3700245213 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20D5CA2E1A1EFB3700245213 /* UIKit.framework */; };
+		20D5CA541A1EFB3700245213 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 20D5CA521A1EFB3700245213 /* InfoPlist.strings */; };
+		20D5CA561A1EFB3700245213 /* AMRMediaTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 20D5CA551A1EFB3700245213 /* AMRMediaTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		20D5CA4D1A1EFB3700245213 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 20D5CA1F1A1EFB3700245213 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 20D5CA261A1EFB3700245213;
+			remoteInfo = AMRMedia;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		20D5CA271A1EFB3700245213 /* AMRMedia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AMRMedia.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		20D5CA2A1A1EFB3700245213 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		20D5CA2C1A1EFB3700245213 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		20D5CA2E1A1EFB3700245213 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		20D5CA321A1EFB3700245213 /* AMRMedia-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AMRMedia-Info.plist"; sourceTree = "<group>"; };
+		20D5CA341A1EFB3700245213 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		20D5CA361A1EFB3700245213 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		20D5CA381A1EFB3700245213 /* AMRMedia-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AMRMedia-Prefix.pch"; sourceTree = "<group>"; };
+		20D5CA391A1EFB3700245213 /* PRNAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PRNAppDelegate.h; sourceTree = "<group>"; };
+		20D5CA3A1A1EFB3700245213 /* PRNAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PRNAppDelegate.m; sourceTree = "<group>"; };
+		20D5CA3D1A1EFB3700245213 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		20D5CA3F1A1EFB3700245213 /* PRNViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PRNViewController.h; sourceTree = "<group>"; };
+		20D5CA401A1EFB3700245213 /* PRNViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PRNViewController.m; sourceTree = "<group>"; };
+		20D5CA421A1EFB3700245213 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		20D5CA481A1EFB3700245213 /* AMRMediaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AMRMediaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		20D5CA491A1EFB3700245213 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		20D5CA511A1EFB3700245213 /* AMRMediaTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AMRMediaTests-Info.plist"; sourceTree = "<group>"; };
+		20D5CA531A1EFB3700245213 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		20D5CA551A1EFB3700245213 /* AMRMediaTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AMRMediaTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		20D5CA241A1EFB3700245213 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				20D5CA2D1A1EFB3700245213 /* CoreGraphics.framework in Frameworks */,
+				20D5CA2F1A1EFB3700245213 /* UIKit.framework in Frameworks */,
+				20D5CA2B1A1EFB3700245213 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		20D5CA451A1EFB3700245213 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				20D5CA4A1A1EFB3700245213 /* XCTest.framework in Frameworks */,
+				20D5CA4C1A1EFB3700245213 /* UIKit.framework in Frameworks */,
+				20D5CA4B1A1EFB3700245213 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		20D5CA1E1A1EFB3700245213 = {
+			isa = PBXGroup;
+			children = (
+				20D5CA301A1EFB3700245213 /* AMRMedia */,
+				20D5CA4F1A1EFB3700245213 /* AMRMediaTests */,
+				20D5CA291A1EFB3700245213 /* Frameworks */,
+				20D5CA281A1EFB3700245213 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		20D5CA281A1EFB3700245213 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				20D5CA271A1EFB3700245213 /* AMRMedia.app */,
+				20D5CA481A1EFB3700245213 /* AMRMediaTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		20D5CA291A1EFB3700245213 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				20D5CA2A1A1EFB3700245213 /* Foundation.framework */,
+				20D5CA2C1A1EFB3700245213 /* CoreGraphics.framework */,
+				20D5CA2E1A1EFB3700245213 /* UIKit.framework */,
+				20D5CA491A1EFB3700245213 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		20D5CA301A1EFB3700245213 /* AMRMedia */ = {
+			isa = PBXGroup;
+			children = (
+				20D5CA391A1EFB3700245213 /* PRNAppDelegate.h */,
+				20D5CA3A1A1EFB3700245213 /* PRNAppDelegate.m */,
+				20D5CA3C1A1EFB3700245213 /* Main.storyboard */,
+				20D5CA3F1A1EFB3700245213 /* PRNViewController.h */,
+				20D5CA401A1EFB3700245213 /* PRNViewController.m */,
+				20D5CA421A1EFB3700245213 /* Images.xcassets */,
+				20D5CA311A1EFB3700245213 /* Supporting Files */,
+			);
+			path = AMRMedia;
+			sourceTree = "<group>";
+		};
+		20D5CA311A1EFB3700245213 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				20D5CA321A1EFB3700245213 /* AMRMedia-Info.plist */,
+				20D5CA331A1EFB3700245213 /* InfoPlist.strings */,
+				20D5CA361A1EFB3700245213 /* main.m */,
+				20D5CA381A1EFB3700245213 /* AMRMedia-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		20D5CA4F1A1EFB3700245213 /* AMRMediaTests */ = {
+			isa = PBXGroup;
+			children = (
+				20D5CA551A1EFB3700245213 /* AMRMediaTests.m */,
+				20D5CA501A1EFB3700245213 /* Supporting Files */,
+			);
+			path = AMRMediaTests;
+			sourceTree = "<group>";
+		};
+		20D5CA501A1EFB3700245213 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				20D5CA511A1EFB3700245213 /* AMRMediaTests-Info.plist */,
+				20D5CA521A1EFB3700245213 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		20D5CA261A1EFB3700245213 /* AMRMedia */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 20D5CA591A1EFB3700245213 /* Build configuration list for PBXNativeTarget "AMRMedia" */;
+			buildPhases = (
+				20D5CA231A1EFB3700245213 /* Sources */,
+				20D5CA241A1EFB3700245213 /* Frameworks */,
+				20D5CA251A1EFB3700245213 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AMRMedia;
+			productName = AMRMedia;
+			productReference = 20D5CA271A1EFB3700245213 /* AMRMedia.app */;
+			productType = "com.apple.product-type.application";
+		};
+		20D5CA471A1EFB3700245213 /* AMRMediaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 20D5CA5C1A1EFB3700245213 /* Build configuration list for PBXNativeTarget "AMRMediaTests" */;
+			buildPhases = (
+				20D5CA441A1EFB3700245213 /* Sources */,
+				20D5CA451A1EFB3700245213 /* Frameworks */,
+				20D5CA461A1EFB3700245213 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				20D5CA4E1A1EFB3700245213 /* PBXTargetDependency */,
+			);
+			name = AMRMediaTests;
+			productName = AMRMediaTests;
+			productReference = 20D5CA481A1EFB3700245213 /* AMRMediaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		20D5CA1F1A1EFB3700245213 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = PRN;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = prinsun;
+				TargetAttributes = {
+					20D5CA471A1EFB3700245213 = {
+						TestTargetID = 20D5CA261A1EFB3700245213;
+					};
+				};
+			};
+			buildConfigurationList = 20D5CA221A1EFB3700245213 /* Build configuration list for PBXProject "AMRMedia" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 20D5CA1E1A1EFB3700245213;
+			productRefGroup = 20D5CA281A1EFB3700245213 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				20D5CA261A1EFB3700245213 /* AMRMedia */,
+				20D5CA471A1EFB3700245213 /* AMRMediaTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		20D5CA251A1EFB3700245213 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				20D5CA431A1EFB3700245213 /* Images.xcassets in Resources */,
+				20D5CA351A1EFB3700245213 /* InfoPlist.strings in Resources */,
+				20D5CA3E1A1EFB3700245213 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		20D5CA461A1EFB3700245213 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				20D5CA541A1EFB3700245213 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		20D5CA231A1EFB3700245213 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				20D5CA371A1EFB3700245213 /* main.m in Sources */,
+				20D5CA3B1A1EFB3700245213 /* PRNAppDelegate.m in Sources */,
+				20D5CA411A1EFB3700245213 /* PRNViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		20D5CA441A1EFB3700245213 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				20D5CA561A1EFB3700245213 /* AMRMediaTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		20D5CA4E1A1EFB3700245213 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 20D5CA261A1EFB3700245213 /* AMRMedia */;
+			targetProxy = 20D5CA4D1A1EFB3700245213 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		20D5CA331A1EFB3700245213 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				20D5CA341A1EFB3700245213 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		20D5CA3C1A1EFB3700245213 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				20D5CA3D1A1EFB3700245213 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		20D5CA521A1EFB3700245213 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				20D5CA531A1EFB3700245213 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		20D5CA571A1EFB3700245213 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		20D5CA581A1EFB3700245213 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		20D5CA5A1A1EFB3700245213 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AMRMedia/AMRMedia-Prefix.pch";
+				INFOPLIST_FILE = "AMRMedia/AMRMedia-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		20D5CA5B1A1EFB3700245213 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AMRMedia/AMRMedia-Prefix.pch";
+				INFOPLIST_FILE = "AMRMedia/AMRMedia-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		20D5CA5D1A1EFB3700245213 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/AMRMedia.app/AMRMedia";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AMRMedia/AMRMedia-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "AMRMediaTests/AMRMediaTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		20D5CA5E1A1EFB3700245213 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/AMRMedia.app/AMRMedia";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AMRMedia/AMRMedia-Prefix.pch";
+				INFOPLIST_FILE = "AMRMediaTests/AMRMediaTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		20D5CA221A1EFB3700245213 /* Build configuration list for PBXProject "AMRMedia" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				20D5CA571A1EFB3700245213 /* Debug */,
+				20D5CA581A1EFB3700245213 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		20D5CA591A1EFB3700245213 /* Build configuration list for PBXNativeTarget "AMRMedia" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				20D5CA5A1A1EFB3700245213 /* Debug */,
+				20D5CA5B1A1EFB3700245213 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		20D5CA5C1A1EFB3700245213 /* Build configuration list for PBXNativeTarget "AMRMediaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				20D5CA5D1A1EFB3700245213 /* Debug */,
+				20D5CA5E1A1EFB3700245213 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 20D5CA1F1A1EFB3700245213 /* Project object */;
+}
