@@ -21,6 +21,13 @@
 		20D5CA4C1A1EFB3700245213 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20D5CA2E1A1EFB3700245213 /* UIKit.framework */; };
 		20D5CA541A1EFB3700245213 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 20D5CA521A1EFB3700245213 /* InfoPlist.strings */; };
 		20D5CA561A1EFB3700245213 /* AMRMediaTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 20D5CA551A1EFB3700245213 /* AMRMediaTests.m */; };
+		20D5CA801A1F2B7300245213 /* amr_wav_converter.c in Sources */ = {isa = PBXBuildFile; fileRef = 20D5CA7A1A1F2B7300245213 /* amr_wav_converter.c */; };
+		20D5CA861A1F2D1200245213 /* PRNAmrRecorder.m in Sources */ = {isa = PBXBuildFile; fileRef = 20D5CA851A1F2D1200245213 /* PRNAmrRecorder.m */; };
+		20D5CA881A1F45C700245213 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20D5CA871A1F45C700245213 /* AVFoundation.framework */; };
+		20D5CA8A1A1F45D400245213 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20D5CA891A1F45D400245213 /* AudioToolbox.framework */; };
+		20D5CA8C1A1F46FB00245213 /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20D5CA8B1A1F46FB00245213 /* CoreAudio.framework */; };
+		20D5CA8F1A1F479800245213 /* libopencore-amrnb.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 20D5CA8D1A1F479800245213 /* libopencore-amrnb.a */; };
+		20D5CA931A1F4B5F00245213 /* PRNAmrPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 20D5CA921A1F4B5F00245213 /* PRNAmrPlayer.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +60,16 @@
 		20D5CA511A1EFB3700245213 /* AMRMediaTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AMRMediaTests-Info.plist"; sourceTree = "<group>"; };
 		20D5CA531A1EFB3700245213 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		20D5CA551A1EFB3700245213 /* AMRMediaTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AMRMediaTests.m; sourceTree = "<group>"; };
+		20D5CA791A1F2B7300245213 /* amr_wav_converter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = amr_wav_converter.h; sourceTree = "<group>"; };
+		20D5CA7A1A1F2B7300245213 /* amr_wav_converter.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = amr_wav_converter.c; sourceTree = "<group>"; };
+		20D5CA841A1F2D1200245213 /* PRNAmrRecorder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PRNAmrRecorder.h; sourceTree = "<group>"; };
+		20D5CA851A1F2D1200245213 /* PRNAmrRecorder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PRNAmrRecorder.m; sourceTree = "<group>"; };
+		20D5CA871A1F45C700245213 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		20D5CA891A1F45D400245213 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		20D5CA8B1A1F46FB00245213 /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
+		20D5CA8D1A1F479800245213 /* libopencore-amrnb.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libopencore-amrnb.a"; sourceTree = "<group>"; };
+		20D5CA911A1F4B5F00245213 /* PRNAmrPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PRNAmrPlayer.h; sourceTree = "<group>"; };
+		20D5CA921A1F4B5F00245213 /* PRNAmrPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PRNAmrPlayer.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,7 +77,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				20D5CA8C1A1F46FB00245213 /* CoreAudio.framework in Frameworks */,
+				20D5CA8A1A1F45D400245213 /* AudioToolbox.framework in Frameworks */,
+				20D5CA881A1F45C700245213 /* AVFoundation.framework in Frameworks */,
 				20D5CA2D1A1EFB3700245213 /* CoreGraphics.framework in Frameworks */,
+				20D5CA8F1A1F479800245213 /* libopencore-amrnb.a in Frameworks */,
 				20D5CA2F1A1EFB3700245213 /* UIKit.framework in Frameworks */,
 				20D5CA2B1A1EFB3700245213 /* Foundation.framework in Frameworks */,
 			);
@@ -101,6 +122,9 @@
 		20D5CA291A1EFB3700245213 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				20D5CA8B1A1F46FB00245213 /* CoreAudio.framework */,
+				20D5CA891A1F45D400245213 /* AudioToolbox.framework */,
+				20D5CA871A1F45C700245213 /* AVFoundation.framework */,
 				20D5CA2A1A1EFB3700245213 /* Foundation.framework */,
 				20D5CA2C1A1EFB3700245213 /* CoreGraphics.framework */,
 				20D5CA2E1A1EFB3700245213 /* UIKit.framework */,
@@ -112,6 +136,7 @@
 		20D5CA301A1EFB3700245213 /* AMRMedia */ = {
 			isa = PBXGroup;
 			children = (
+				20D5CA5F1A1EFBC400245213 /* AMRMedia */,
 				20D5CA391A1EFB3700245213 /* PRNAppDelegate.h */,
 				20D5CA3A1A1EFB3700245213 /* PRNAppDelegate.m */,
 				20D5CA3C1A1EFB3700245213 /* Main.storyboard */,
@@ -150,6 +175,28 @@
 				20D5CA521A1EFB3700245213 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		20D5CA5F1A1EFBC400245213 /* AMRMedia */ = {
+			isa = PBXGroup;
+			children = (
+				20D5CA781A1F2B7300245213 /* Codec */,
+				20D5CA841A1F2D1200245213 /* PRNAmrRecorder.h */,
+				20D5CA851A1F2D1200245213 /* PRNAmrRecorder.m */,
+				20D5CA911A1F4B5F00245213 /* PRNAmrPlayer.h */,
+				20D5CA921A1F4B5F00245213 /* PRNAmrPlayer.m */,
+			);
+			path = AMRMedia;
+			sourceTree = "<group>";
+		};
+		20D5CA781A1F2B7300245213 /* Codec */ = {
+			isa = PBXGroup;
+			children = (
+				20D5CA8D1A1F479800245213 /* libopencore-amrnb.a */,
+				20D5CA791A1F2B7300245213 /* amr_wav_converter.h */,
+				20D5CA7A1A1F2B7300245213 /* amr_wav_converter.c */,
+			);
+			path = Codec;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -250,7 +297,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				20D5CA801A1F2B7300245213 /* amr_wav_converter.c in Sources */,
 				20D5CA371A1EFB3700245213 /* main.m in Sources */,
+				20D5CA931A1F4B5F00245213 /* PRNAmrPlayer.m in Sources */,
+				20D5CA861A1F2D1200245213 /* PRNAmrRecorder.m in Sources */,
 				20D5CA3B1A1EFB3700245213 /* PRNAppDelegate.m in Sources */,
 				20D5CA411A1EFB3700245213 /* PRNViewController.m in Sources */,
 			);
@@ -334,7 +384,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 			};
@@ -366,7 +416,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -380,6 +430,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "AMRMedia/AMRMedia-Prefix.pch";
 				INFOPLIST_FILE = "AMRMedia/AMRMedia-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/AMRMedia/AMRMedia/Codec",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -393,6 +447,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "AMRMedia/AMRMedia-Prefix.pch";
 				INFOPLIST_FILE = "AMRMedia/AMRMedia-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/AMRMedia/AMRMedia/Codec",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};

@@ -7,8 +7,20 @@
 //
 
 #import "PRNViewController.h"
+#import "PRNAmrRecorder.h"
+#import "PRNAmrPlayer.h"
 
-@interface PRNViewController ()
+#define PATH_OF_DOCUMENT  [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) objectAtIndex:0]
+
+@interface PRNViewController () <PRNAmrRecorderDelegate>
+{
+    PRNAmrRecorder *recorder;
+    PRNAmrPlayer *player;
+    
+    BOOL outputMode;
+}
+
+@property (weak, nonatomic) IBOutlet UILabel *powerLabel;
 
 @end
 
@@ -17,13 +29,48 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+	
+    recorder = [[PRNAmrRecorder alloc] init];
+    recorder.delegate = self;
+    
+    player = [[PRNAmrPlayer alloc] init];
 }
 
-- (void)didReceiveMemoryWarning
+- (IBAction)startRecord:(id)sender
 {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+    NSString *recordFile = [PATH_OF_DOCUMENT stringByAppendingPathComponent:@"test.amr"];
+    [recorder recordWithURL:[NSURL URLWithString:recordFile]];
+}
+
+- (IBAction)stopRecord:(id)sender
+{
+    [recorder stop];
+}
+
+- (IBAction)playRecord:(id)sender
+{
+    NSString *recordFile = [PATH_OF_DOCUMENT stringByAppendingPathComponent:@"test.amr"];
+    [player playWithURL:[NSURL URLWithString:recordFile]];
+}
+
+- (IBAction)changeOuput:(id)sender
+{
+    outputMode = !outputMode;
+    [player setSpeakMode:outputMode];
+}
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+#pragma mark - PRNAmrRecorderDelegate
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+- (void)recorder:(PRNAmrRecorder *)aRecorder didRecordWithFile:(NSURL *)fileUrl
+{
+    NSLog(@"record with file : %@", fileUrl.absoluteString);
+}
+
+- (void)recorder:(PRNAmrRecorder *)aRecorder didPickSpeakPower:(float)power
+{
+    self.powerLabel.text = [NSString stringWithFormat:@"%f", power];
 }
 
 @end
