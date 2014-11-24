@@ -130,6 +130,21 @@
     [audioRecorder stop];
 }
 
+- (void)setSpeakMode:(BOOL)speakMode
+{
+    if ([[UIDevice currentDevice].systemVersion floatValue] >= 6.0) {
+        AVAudioSessionPortOverride portOverride = speakMode ? AVAudioSessionPortOverrideSpeaker : AVAudioSessionPortOverrideNone;
+        [[AVAudioSession sharedInstance] overrideOutputAudioPort:portOverride error:nil];
+    } else {
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wdeprecated-declarations"
+        UInt32 route = speakMode ? kAudioSessionOverrideAudioRoute_Speaker : kAudioSessionOverrideAudioRoute_None;
+        AudioSessionSetProperty(kAudioSessionProperty_OverrideAudioRoute, sizeof(route), &route);
+#pragma clang diagnostic pop
+        
+    }
+}
+
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 #pragma mark - AVAudioRecorderDelegate
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////

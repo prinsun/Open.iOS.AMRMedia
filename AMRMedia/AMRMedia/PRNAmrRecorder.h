@@ -28,6 +28,13 @@
 - (void)stop;
 
 /**
+ *  使用免提, 还是耳机线进行录制
+ *
+ *  @param speakMode 是否使用免提录制
+ */
+- (void)setSpeakMode:(BOOL)speakMode;
+
+/**
  *  录音器委托
  */
 @property (nonatomic, weak) id<PRNAmrRecorderDelegate> delegate;

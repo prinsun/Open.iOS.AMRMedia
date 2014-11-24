@@ -39,6 +39,8 @@
 - (IBAction)startRecord:(id)sender
 {
     NSString *recordFile = [PATH_OF_DOCUMENT stringByAppendingPathComponent:@"test.amr"];
+    
+    [recorder setSpeakMode:NO];
     [recorder recordWithURL:[NSURL URLWithString:recordFile]];
 }
 
@@ -50,6 +52,7 @@
 - (IBAction)playRecord:(id)sender
 {
     NSString *recordFile = [PATH_OF_DOCUMENT stringByAppendingPathComponent:@"test.amr"];
+    [player setSpeakMode:outputMode];
     [player playWithURL:[NSURL URLWithString:recordFile]];
 }
 
