@@ -43,6 +43,34 @@
 @end
 
 
+
+
+/**
+ *  AMR 文件信息
+ */
+@interface PRNAmrFileInfo  : NSObject
+
+/**
+ *  文件路径
+ */
+@property (nonatomic, copy) NSURL *fileUrl;
+
+/**
+ *  文件时间, 单位秒
+ */
+@property (nonatomic, assign) NSTimeInterval duration;
+
+/**
+ *  文件大小
+ */
+@property (nonatomic, assign) unsigned long long fileSize;
+
+
+@end
+
+
+
+
 /**
  *  录音器委托
  */
@@ -55,7 +83,7 @@
  *  @param aRecorder 录音器
  *  @param fileUrl   产生的录音文件
  */
-- (void)recorder:(PRNAmrRecorder *)aRecorder didRecordWithFile:(NSURL *)fileUrl;
+- (void)recorder:(PRNAmrRecorder *)aRecorder didRecordWithFile:(PRNAmrFileInfo *)fileInfo;
 
 
 /**

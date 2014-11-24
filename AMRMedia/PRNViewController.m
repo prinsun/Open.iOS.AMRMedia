@@ -66,9 +66,13 @@
 #pragma mark - PRNAmrRecorderDelegate
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-- (void)recorder:(PRNAmrRecorder *)aRecorder didRecordWithFile:(NSURL *)fileUrl
+- (void)recorder:(PRNAmrRecorder *)aRecorder didRecordWithFile:(PRNAmrFileInfo *)fileInfo
 {
-    NSLog(@"record with file : %@", fileUrl.absoluteString);
+    NSLog(@"==================================================================");
+    NSLog(@"record with file : %@", fileInfo.fileUrl);
+    NSLog(@"file size: %llu", fileInfo.fileSize);
+    NSLog(@"file duration : %f", fileInfo.duration);
+     NSLog(@"==================================================================");
 }
 
 - (void)recorder:(PRNAmrRecorder *)aRecorder didPickSpeakPower:(float)power

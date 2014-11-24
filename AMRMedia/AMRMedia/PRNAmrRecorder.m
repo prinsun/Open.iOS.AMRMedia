@@ -151,7 +151,7 @@
 
 - (void)audioRecorderDidFinishRecording:(AVAudioRecorder *)recorder successfully:(BOOL)flag
 {
-    wave_file_to_amr_file([tempRecordFileURL.absoluteString cStringUsingEncoding:NSASCIIStringEncoding],
+   int frames = wave_file_to_amr_file([tempRecordFileURL.absoluteString cStringUsingEncoding:NSASCIIStringEncoding],
                           [currentRecordFileURL.absoluteString cStringUsingEncoding:NSASCIIStringEncoding], 1, 16);
     
     NSFileManager *fileManager = [NSFileManager defaultManager];
@@ -160,7 +160,13 @@
     [fileManager copyItemAtPath:tempRecordFileURL.absoluteString toPath:wavFileUrlString error:nil];
     
     if ([self.delegate respondsToSelector:@selector(recorder:didRecordWithFile:)]) {
-        [self.delegate recorder:self didRecordWithFile:currentRecordFileURL];
+        
+        PRNAmrFileInfo *recFileInfo = [[PRNAmrFileInfo alloc] init];
+        recFileInfo.fileUrl = currentRecordFileURL;
+        recFileInfo.fileSize = [fileManager attributesOfItemAtPath:currentRecordFileURL.path error:nil].fileSize;
+        recFileInfo.duration = (double)frames * 20.0 / 1000.0;
+        
+        [self.delegate recorder:self didRecordWithFile:recFileInfo];
     }
     
     if (timer) {
@@ -178,3 +184,5 @@
 
 
 @end
+
+@implementation PRNAmrFileInfo @end
