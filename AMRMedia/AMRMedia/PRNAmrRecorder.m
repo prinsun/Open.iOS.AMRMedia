@@ -105,7 +105,7 @@
 - (void)p_createPickSpeakPowerTimer
 {
     timer = dispatch_source_create(DISPATCH_SOURCE_TYPE_TIMER, 0, 0, dispatch_get_main_queue());
-    dispatch_source_set_timer(timer, DISPATCH_TIME_NOW, 0.02 * NSEC_PER_SEC, 1ull * NSEC_PER_SEC);
+    dispatch_source_set_timer(timer, DISPATCH_TIME_NOW, 0.01 * NSEC_PER_SEC, 1ull * NSEC_PER_SEC);
     
     __weak __typeof(self) weakSelf = self;
     
@@ -116,7 +116,7 @@
             [_self->audioRecorder updateMeters];
             
             double lowPassResults = pow(10, (0.05 * [_self->audioRecorder peakPowerForChannel:0]));
-            [self.delegate recorder:_self didPickSpeakPower:lowPassResults];
+            [_self.delegate recorder:_self didPickSpeakPower:lowPassResults];
         }
     });
     
