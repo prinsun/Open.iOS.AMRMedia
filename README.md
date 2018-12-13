@@ -30,7 +30,7 @@ AMRMedia
     NSLog(@"record with file : %@", fileInfo.fileUrl);
     NSLog(@"file size: %llu", fileInfo.fileSize);
     NSLog(@"file duration : %f", fileInfo.duration);
-     NSLog(@"==================================================================");
+    NSLog(@"==================================================================");
 }
 
 - (void)recorder:(PRNAmrRecorder *)aRecorder didPickSpeakPower:(float)power
